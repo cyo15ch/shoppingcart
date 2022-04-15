@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Altcademy: Stock Portfolio Example</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center my-4">Shopping Cart</h1>
+      <div class="row">
+        <div class="col-12">
+          <table class="table table-responsive">
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Price ($)</th>
+                <th scope="col">QTY</th>
+                <th scope="col">Subtotal ($)</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="name">Salmon</td>
+                <td class="price"><input type="number" value="20" /></td>
+                <td class="qty"><input type="number" value="50" /></td>
+                <td class="subtotal"></td>
+                <td><button class="btn btn-light btn-sm remove">remove</button></td>
+              </tr>
+              <tr>
+                <td class="name">Tuna</td>
+                <td class="price"><input type="number" value="5" /></td>
+                <td class="qty"><input type="number" value="200" /></td>
+                <td class="subtotal"></td>
+                <td><button class="btn btn-light btn-sm remove">remove</button></td>
+              </tr>
+              <tr>
+                <td class="name">Carp </td>
+                <td class="price"><input type="number" value="100" /></td>
+                <td class="qty"><input type="number" value="20" /></td>
+                <td class="subtotal"></td>
+                <td><button class="btn btn-light btn-sm remove">remove</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <form class="col-12 mt-2 mb-4" id="addStock">
+          <input class="mx-2" name="name" type="text" placeholder="Name" required/>
+          <input class="mx-2" name="price" type="number" placeholder="Price"/>
+          <input class="mx-2" name="qty" type="number" placeholder="QTY"/>
+          <button class="btn btn-primary btn-sm">add</button>
+        </form>
+
+        <div class="col-12 col-md-6">
+          <h4 class="mb-3">Total Price: $ <span id="totalprice"></span></h4>
+        </div>
+        
+
+      </div>
+    </div>
+  </body>
+</html>
